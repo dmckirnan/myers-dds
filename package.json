@@ -2,12 +2,15 @@
   "name": "myers-dds",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev",
+    "dev": "concurrently --kill-others \"npm run build\" \"npm run server\"",
+    "dev-start": "webpack-dev-server -d --hot --config webpack.config.js --watch",
+    "server": "nodemon server/server.js",
+    "build": "webpack -p",
+    "tdd": "npm test -- --watch",
+    "test": "mocha --compilers js:babel-core/register --require ignore-styles"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,45 @@
   "bugs": {
     "url": "https://github.com/dmckirnan/myers-dds/issues"
   },
-  "homepage": "https://github.com/dmckirnan/myers-dds#readme"
+  "homepage": "https://github.com/dmckirnan/myers-dds#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.1",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "sass-loader": "^6.0.6",
+    "sinon": "^4.0.1",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "chai": "^4.1.2",
+    "concurrently": "^3.5.0",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jsdom": "^11.3.0",
+    "mocha": "^4.0.1",
+    "react-test-renderer": "^16.0.0",
+    "webpack-dev-server": "^2.9.1"
+  }
 }
