@@ -24,6 +24,7 @@ class App extends Component {
     return (
       <div>
         <Nav active={this.state.mobile} toggle={this.toggleMobile} />
+        <Main />
       </div>
     );
   }
