@@ -9,7 +9,7 @@ class App extends Component {
     super();
     this.state = {
       mobile: false,
-    }
+    };
     this.toggleMobile = this.toggleMobile.bind(this);
   }
 

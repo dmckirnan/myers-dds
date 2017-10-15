@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import '../styles/Nav.scss';
 
-const Nav = (props) => {
-  return (
+const Nav = props =>
+  (
     <section className="navigation">
       <div className="nav-container">
         <div className="brand">
@@ -12,7 +13,7 @@ const Nav = (props) => {
         </div>
         <nav>
           <div className="nav-mobile">
-            <a id="nav-toggle" onClick={props.toggle} className={props.active ? 'active': ''} href="#"><span /></a>
+            <a id="nav-toggle" onClick={props.toggle} className={props.active ? 'active' : ''} href="#"><span /></a>
           </div>
           <ul id={props.active ? 'displayList' : ''} className="nav-list">
             <li><Link to="/">Home</Link></li>
@@ -25,6 +26,10 @@ const Nav = (props) => {
       </div>
     </section>
   );
-}
+
+Nav.propTypes = {
+  toggle: PropTypes.func.isRequired,
+  active: PropTypes.bool.isRequired,
+};
 
 export default Nav;
