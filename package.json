@@ -10,7 +10,10 @@
     "server": "nodemon server/server.js",
     "build": "webpack -p",
     "tdd": "npm test -- --watch",
-    "test": "mocha --compilers js:babel-core/register --require ignore-styles"
+    "test": "mocha --compilers js:babel-core/register --require ignore-styles",
+    "postinstall": "webpack",
+    "heroku-postbuild": "webpack -p",
+
   },
   "repository": {
     "type": "git",
