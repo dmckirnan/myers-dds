@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js",
-    "start-dev": "npm run dev",
+    "start": "npm run dev",
     "dev": "concurrently --kill-others \"npm run build\" \"npm run server\"",
     "dev-start": "webpack-dev-server -d --hot --config webpack.config.js --watch",
     "server": "nodemon server/server.js",
