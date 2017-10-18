@@ -8,4 +8,4 @@ const app = express();
 app.use(express.static(path.join(__dirname, '..', '/build')));
 app.get('*', (req, res) => res.sendFile('index.html'));
 
-app.listen(process.env.port || 8080);
+app.listen(process.env.PORT || 8080);
