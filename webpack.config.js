@@ -9,7 +9,6 @@ const config = {
     path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
   },
-  watch: true,
   module: {
     loaders: [{
       test: /\.jsx?/,
@@ -30,13 +29,6 @@ const config = {
       loader: 'url?limit=25000',
     },
     ],
-  },
-  devServer: {
-    contentBase: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js',
-    historyApiFallback: true,
-    inline: true,
-    open: true,
   },
   resolve: {
     extensions: ['.js', '.jsx'],
