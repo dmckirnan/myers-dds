@@ -6,8 +6,7 @@ const config = {
     app: './client/index.js',
   },
   output: {
-    path: __dirname,
-    publicPath: '/build',
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
   },
   watch: true,
@@ -33,18 +32,11 @@ const config = {
     ],
   },
   plugins: [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      minimize: true,
-      compress: {
-        warnings: false,
-      },
-    }),
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-      },
-    }),
+    new webpack.HotModuleReplacementPlugin(), // For live reloading
+    new webpack.NoErrorsPlugin(), // Makes sure Webpack will not compile if Errors
+
+    // prints more readable module names in the browser console on HMR updates
+    new webpack.NamedModulesPlugin(),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, 'build'),
@@ -54,7 +46,8 @@ const config = {
     open: true,
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    modulesDirectories: ['node_modules', 'src'],
+    extensions: ['.js', '.jsx'],
   },
   devtool: 'eval-source-map',
 };
