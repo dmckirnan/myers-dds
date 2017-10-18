@@ -39,10 +39,6 @@ const config = {
     inline: true,
     open: true,
   },
-  resolve: {
-    modulesDirectories: ['node_modules', 'client'],
-    extensions: ['', '.js', '.jsx'],
-  },
   devtool: 'eval-source-map',
 };
 
