@@ -9,6 +9,7 @@ const config = {
     path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
   },
+  devtool: 'eval-source-map',
   module: {
     loaders: [{
       test: /\.jsx?/,
@@ -30,10 +31,16 @@ const config = {
     },
     ],
   },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'build'),
+    filename: 'bundle.js',
+    historyApiFallback: true,
+    inline: true,
+    open: true,
+  },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
-  devtool: 'eval-source-map',
 };
 
 module.exports = config;
