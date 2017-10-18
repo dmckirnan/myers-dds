@@ -8,5 +8,4 @@ const app = express();
 app.use(express.static(path.join(__dirname, '..', '/build')));
 app.get('*', (req, res) => res.sendFile('index.html'));
 
-const server = app.listen(process.env.port || 5000, () => console.log('Live on 5000'));
-module.exports = server;
+app.listen(process.env.port || 5000);
