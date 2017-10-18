@@ -31,13 +31,6 @@ const config = {
     },
     ],
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(), // For live reloading
-    new webpack.NoErrorsPlugin(), // Makes sure Webpack will not compile if Errors
-
-    // prints more readable module names in the browser console on HMR updates
-    new webpack.NamedModulesPlugin(),
-  ],
   devServer: {
     contentBase: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
@@ -46,7 +39,6 @@ const config = {
     open: true,
   },
   resolve: {
-    modulesDirectories: ['node_modules', 'src'],
     extensions: ['.js', '.jsx'],
   },
   devtool: 'eval-source-map',
