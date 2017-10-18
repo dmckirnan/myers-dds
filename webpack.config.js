@@ -7,8 +7,8 @@ const config = {
   },
   output: {
     path: path.join(__dirname, 'build'),
-    publicPath: '/',
     filename: 'bundle.js',
+    publicPath: '/build',
   },
   watch: true,
   module: {
