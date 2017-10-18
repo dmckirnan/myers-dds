@@ -7,7 +7,7 @@
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "build": "webpack -p",
     "prod": "NODE_ENV=production node server/server.js",
-    "postinstall": "webpack -p"
+    "postinstall": "webpack -p --config ./webpack.config.js --progress"
   },
   "repository": {
     "type": "git",
