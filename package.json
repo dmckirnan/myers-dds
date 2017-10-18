@@ -10,9 +10,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "server": "nodemon server/server.js",
-    "build": "webpack -p",
     "tdd": "npm test -- --watch",
-    "test": "mocha --compilers js:babel-core/register --require ignore-styles"
+    "test": "mocha --compilers js:babel-core/register --require ignore-styles",
+    "build": "webpack --config webpack.config.js -p --progress --colors",
+    "postinstall": "webpack --config webpack.config.js -p --progress --colors"
   },
   "repository": {
     "type": "git",
