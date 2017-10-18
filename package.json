@@ -5,14 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "dev": "concurrently --kill-others \"npm run build\" \"npm run server\"",
-    "dev-start": "webpack-dev-server -d --hot --config webpack.config.js --watch",
     "build": "webpack -p",
     "prod": "NODE_ENV=production node server/server.js",
-    "postinstall": "webpack -p",
-    "server": "nodemon server/server.js",
-    "tdd": "npm test -- --watch",
-    "test": "mocha --compilers js:babel-core/register --require ignore-styles"
+    "postinstall": "webpack -p"
   },
   "repository": {
     "type": "git",
