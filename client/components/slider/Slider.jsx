@@ -11,9 +11,9 @@ class Slider extends Component {
     super(props);
     this.state = {
       background: [
-        'https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?fit=crop&fm=jpg&h=825&q=80&w=1325',
-        'https://images.unsplash.com/photo-1445251836269-d158eaa028a6?fit=crop&fm=jpg&h=825&q=80&w=1325',
-        'https://images.unsplash.com/photo-1443926818681-717d074a57af?fit=crop&fm=jpg&h=825&q=80&w=1325',
+        'http://officeinspire.com/wp-content/uploads/2015/05/green-dental-office.jpg',
+        'http://www.myimagedental.com/wp-content/uploads/2016/01/Front-Dentist-Office-1024x683.jpg',
+        'http://brighterdentalcare.com/wp-content/uploads/photo-gallery/Bedminster%20Dental%20Office%20entry%20way.jpg',
       ],
       current: 0,
     };

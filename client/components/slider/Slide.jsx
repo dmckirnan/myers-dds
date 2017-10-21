@@ -6,7 +6,7 @@ const Slide = (props) => {
 
   const styles = {
     imageBackground: {
-      backgroundImage: `url(${current}.jpg)`,
+      backgroundImage: `url(${current})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
     },

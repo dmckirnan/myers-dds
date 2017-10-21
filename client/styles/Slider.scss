@@ -3,7 +3,7 @@
   width: 100%;
   background: #ddd;
   position: absolute;
-
+  
   h1,h2,h3,h4,h5,h6 {
     margin: 0;
   }
@@ -13,13 +13,12 @@
     width: 100%;
   }
 
-  // Handles the fancy shmancy dots
   .dotsContainer {
     position: absolute;
     bottom: 7%;
     width: 100%;
     text-align: center;
-    z-index: 99999;
+    z-index: 2;
 
     .dot {
       background: #222;
@@ -33,7 +32,6 @@
     }
   }
 
-  // Arrows
   .nextArrow {
     position: absolute;
     top: 50%;
@@ -64,5 +62,4 @@
       transition: all ease-in .2s;
     }
   }
-
 }
