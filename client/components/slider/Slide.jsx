@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const Slide = (props) => {
   const current = props.background[props.current];
-
   const styles = {
     imageBackground: {
       backgroundImage: `url(${current})`,
