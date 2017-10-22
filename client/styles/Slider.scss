@@ -1,4 +1,5 @@
 $transition: 0.6s ease;
+$breakpoint: 800px;
 
 .slider {
   height: 750px;
@@ -43,12 +44,11 @@ $transition: 0.6s ease;
     right: 5%;
     cursor: pointer;
     transition: $transition;
-    color: slategrey;
+    color: #fff;
 
     &:hover {
       opacity: 0.5;
       transform: scale(1.4);
-      transition: $transition;
     }
   }
 
@@ -57,8 +57,7 @@ $transition: 0.6s ease;
     top: 50%;
     left: 5%;
     cursor: pointer;
-    color: slategrey;
-
+    color: #fff;
     transition: all ease-in .2s;
 
     &:hover {
@@ -66,5 +65,11 @@ $transition: 0.6s ease;
       transform: scale(1.4);
       transition: all ease-in .2s;
     }
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .slider {
+    height: 450px;
   }
 }

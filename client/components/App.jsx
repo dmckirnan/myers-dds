@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Nav from './Nav.jsx';
 import Main from './Main.jsx';
+import Footer from './Footer.jsx';
 import '../styles/App.scss';
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
       <div>
         <Nav active={this.state.mobile} toggle={this.toggleMobile} />
         <Main />
+        <Footer />
       </div>
     );
   }
