@@ -59,7 +59,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    .fa-envelope {
+    .fa-envelope, .fa-map-marker, .fa-phone {
       font-size: 17px;
       line-height: 38px;
     }
@@ -88,11 +88,10 @@
         font-size: 14px;
         line-height: 2;
       }
-  
-      a {
-        color: #5383d3;
-        text-decoration: none;
-      }
+    }
+    a {
+      color: #5383d3;
+      text-decoration: none;
     }
   }
 }
