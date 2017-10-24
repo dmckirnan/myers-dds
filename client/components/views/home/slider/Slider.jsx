@@ -3,7 +3,7 @@ import Slide from './Slide';
 import RightArrow from './RightArrow';
 import LeftArrow from './LeftArrow';
 import Dots from './Dots';
-import '../../styles/Slider.scss';
+import '../../../../styles/Slider.scss';
 
 
 class Slider extends Component {

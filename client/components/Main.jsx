@@ -1,11 +1,11 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from './views/Home.jsx';
-import Staff from './views/Staff.jsx';
-import Services from './views/Services.jsx';
-import Payment from './views/Payment.jsx';
-import Contact from './views/Contact.jsx';
+import Home from './views/home/Home.jsx';
+import Staff from './views/staff/Staff.jsx';
+import Services from './views/services/Services.jsx';
+import Payment from './views/payment/Payment.jsx';
+import Contact from './views/contact/Contact.jsx';
 
 const Main = () => (
   <main>

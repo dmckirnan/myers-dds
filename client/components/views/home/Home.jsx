@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from '../slider/Slider.jsx';
+import Slider from './slider/Slider.jsx';
 
 const Home = () => (
   <div id="home-container">
