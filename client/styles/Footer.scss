@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie');
+$breakpoint: 800px;
 
 .footer {
   background-color: #292c2f;
@@ -8,10 +9,6 @@
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
-  
-
-  display: flex;
-  flex-direction: row;
   vertical-align: top;
 
   h3 {
@@ -26,7 +23,8 @@
 
   .footer-left {
     width: 40%;
-    
+    display: inline-block;
+    vertical-align: top;
     .footer-name {
       color: #8f9296;
       font-size: 14px;
@@ -37,7 +35,8 @@
 
   .footer-center {
     width: 35%;
-  
+    display: inline-block;
+    vertical-align: top;
     i {
       background-color: #33383b;
       color: #ffffff;
@@ -52,7 +51,7 @@
     }
 
     .fa {
-      display: inline-block;
+      // display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
@@ -94,24 +93,43 @@
       text-decoration: none;
     }
   }
+
+  .footer-right {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;    
+    .footer-company {
+      line-height: 20px;
+      color: #92999f;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+  
+      span {
+        display: block;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
-.footer-right {
-  width: 20%;
-
-  .footer-company {
-    line-height: 20px;
-    color: #92999f;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
-
-    span {
+@media (max-width: $breakpoint) {
+  .footer {
+    font: bold 14px sans-serif;
+    .footer-left, .footer-center, .footer-right {
       display: block;
-      color: #ffffff;
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: 20px;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    img {
+      display: none;
     }
   }
 }

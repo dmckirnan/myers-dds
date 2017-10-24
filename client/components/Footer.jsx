@@ -32,7 +32,6 @@ const Footer = () => (
         <span>Our Location</span>
         Random Location Info .... Corner of Harbor and X
       </p>
-      <img src="http://fullertonsmiles.net/images/map_21.jpg" alt="map" />
     </div>
   </footer>
 );
