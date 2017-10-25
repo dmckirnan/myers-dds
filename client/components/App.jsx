@@ -4,12 +4,14 @@ import Nav from './Nav.jsx';
 import Main from './Main.jsx';
 import Footer from './Footer.jsx';
 import '../styles/App.scss';
+import services from '../../assets/services';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       mobile: false,
+      services,
     };
     this.toggleMobile = this.toggleMobile.bind(this);
   }
@@ -25,7 +27,7 @@ class App extends Component {
     return (
       <div>
         <Nav active={this.state.mobile} toggle={this.toggleMobile} />
-        <Main />
+        <Main services={this.state.services} />
         <Footer />
       </div>
     );

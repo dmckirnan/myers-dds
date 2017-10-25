@@ -1,10 +1,23 @@
 import React from 'react';
-import Slider from './slider/Slider.jsx';
+import PropTypes from 'prop-types';
 
-const Home = () => (
+import Slider from './slider/Slider.jsx';
+import Services from './Services.jsx';
+
+const Home = ({ services }) => (
   <div id="home-container">
     <Slider />
+    <Services services={services} />
   </div>
 );
+
+Home.propTypes = {
+  services: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      img: PropTypes.string,
+    }).isRequired,
+  ).isRequired,
+};
 
 export default Home;
