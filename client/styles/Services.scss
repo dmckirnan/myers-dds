@@ -1,3 +1,5 @@
+$breakpoint: 800px;
+
 .services {
   position: relative;
   width: 100%;
@@ -31,5 +33,11 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .services {
+    display: none;
   }
 }
