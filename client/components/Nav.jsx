@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import '../styles/Nav.scss';
 
-const Nav = props =>
+const Nav = ({ toggle, active }) =>
   (
     <section className="navigation">
       <div className="nav-container">
@@ -13,9 +13,9 @@ const Nav = props =>
         </div>
         <nav>
           <div className="nav-mobile">
-            <a id="nav-toggle" onClick={props.toggle} className={props.active ? 'active' : ''} href="#"><span /></a>
+            <a id="nav-toggle" onClick={toggle} className={active ? 'active' : ''} href="#"><span /></a>
           </div>
-          <ul id={props.active ? 'displayList' : ''} className="nav-list">
+          <ul id={active ? 'displayList' : ''} className="nav-list">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/staff">Staff</Link></li>
             <li><Link to="/services">Services</Link></li>
