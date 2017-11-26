@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from './views/home/Home.jsx';
-import Staff from './views/staff/Staff.jsx';
-import Services from './views/services/Services.jsx';
-import Payment from './views/payment/Payment.jsx';
-import Contact from './views/contact/Contact.jsx';
+import Home from './routes/home/Home.jsx';
+import Staff from './routes/staff/Staff.jsx';
+import Services from './routes/services/Services.jsx';
+import Payment from './routes/payment/Payment.jsx';
+import Contact from './routes/contact/Contact.jsx';
 
 const Main = ({ services }) =>
   (
