@@ -1,43 +1,43 @@
 const services = [
   {
     name: 'Complete Exams & Cleanings',
-    img: '',
+    img: 'https://cebumodeling.com/blog/wp-content/uploads/2017/05/smiling.jpg',
   },
   {
     name: 'Cosmetic Metal-Free Crowns, Bridges and Veneers',
-    img: '',
+    img: 'https://cebumodeling.com/blog/wp-content/uploads/2017/05/smiling.jpg',
   },
   {
     name: 'Comprehensive, Full-Mouth Reconstruction',
-    img: '',
+    img: 'https://cebumodeling.com/blog/wp-content/uploads/2017/05/smiling.jpg',
   },
   {
     name: 'Implants',
-    img: '',
+    img: 'https://cebumodeling.com/blog/wp-content/uploads/2017/05/smiling.jpg',
   },
   {
     name: 'Whitening: In-Office and Take-Home Packages',
-    img: '',
+    img: 'https://cebumodeling.com/blog/wp-content/uploads/2017/05/smiling.jpg',
   },
   {
     name: 'Pediatric Care',
-    img: '',
+    img: 'https://cebumodeling.com/blog/wp-content/uploads/2017/05/smiling.jpg',
   },
   {
     name: 'Partial and Full Dentures',
-    img: '',
+    img: 'https://cebumodeling.com/blog/wp-content/uploads/2017/05/smiling.jpg',
   },
   {
     name: 'Root Canals',
-    img: '',
+    img: 'https://cebumodeling.com/blog/wp-content/uploads/2017/05/smiling.jpg',
   },
   {
     name: 'Extractions',
-    img: '',
+    img: 'https://cebumodeling.com/blog/wp-content/uploads/2017/05/smiling.jpg',
   },
   {
     name: 'Metal Free Fillings',
-    img: '',
+    img: 'https://cebumodeling.com/blog/wp-content/uploads/2017/05/smiling.jpg',
   },
 ];
 

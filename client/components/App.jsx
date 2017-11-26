@@ -13,14 +13,11 @@ class App extends Component {
       mobile: false,
       services,
     };
-    this.toggleMobile = this.toggleMobile.bind(this);
   }
 
-  toggleMobile() {
-    const obj = Object.assign({}, this.state);
-    const mobile = !obj.mobile;
-
-    this.setState({ mobile });
+  toggleMobile = () => {
+    const { mobile } = this.state;
+    this.setState({ mobile: !mobile });
   }
 
   render() {

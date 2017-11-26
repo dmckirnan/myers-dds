@@ -1,22 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../../../styles/Services.scss';
 
 const Services = ({ services }) => {
   const arr = services.map((x, index) =>
     (
-      <li key={index}>
-        {x.name}
-        <img
-          src={x.img}
-          alt={x.name}
-        />
+      <li className="service" key={index}>
+        <div className="img">
+          <img
+            src={x.img}
+            alt={x.name}
+          />
+        </div>
+        <div className="info">
+          <h5>{x.name}</h5>
+        </div>
       </li>
     ));
 
   return (
-    <ul>
-      {arr}
-    </ul>
+    <section className="services">
+      <ul className="services-list">
+        {arr}
+      </ul>
+    </section>
   );
 };
 

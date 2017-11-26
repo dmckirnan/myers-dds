@@ -1,0 +1,31 @@
+.services {
+  width: 100%;
+  background: #d3d3d3;
+}
+
+.services-list {
+  list-style-type: none;
+
+  .service {
+    color: #fff !important;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+  
+    .img {
+      img {
+        position: relative;
+        height: 250px;
+        width: 350px;
+        border: 5px solid #fff;
+    
+        &:hover, &:active {
+          transform: scale(1.1);
+          transition: all 0.35s ease-in-out;
+        }
+      }
+    }
+  }
+}
